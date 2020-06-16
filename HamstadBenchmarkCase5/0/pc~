@@ -1,0 +1,59 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      pc;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [1 -1 -2 0 0 0 0];
+
+internalField   uniform 120738829; 
+
+boundaryField
+{
+    inside
+    {
+	type                    groovyBC;
+        variables               "betai=3e-8;pci=1.039E+08;k=Krel+K_v;";
+        valueExpression         "pci";
+        value                   uniform 120738829;
+        fractionExpression      "1.0/(1.0 + k/(mag(delta())*betai))";
+        /*type                    groovyBC;
+        variables               "betai=3e-8;k=Krel+K_v;";
+        valueExpression         "pci(time())";
+        value                   uniform 120738829;
+        fractionExpression      "1.0/(1.0 + k/(mag(delta())*betai))";
+        lookuptables (
+        {
+            name pci;
+            outOfBounds clamp;
+            fileName "$FOAM_CASE/0/bc/pci.dat";
+        }
+    );*/
+    }
+    outside
+    {   
+        type                    groovyBC;
+        variables               "betao=2e-7;pco=8.57e6;k=Krel+K_v;";
+        valueExpression         "pco";
+        value                   uniform 120738829;
+        fractionExpression      "1.0/(1.0 + k/(mag(delta())*betao))";
+    }
+    sides
+    {
+        type            empty;
+    }
+}
+
+
+// ************************************************************************* //
