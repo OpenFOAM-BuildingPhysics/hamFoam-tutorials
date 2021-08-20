@@ -19,7 +19,7 @@ buildingMaterials
 (
 	{
 		name	loadBearing;
-		buildingMaterialModel HamstadBrick;
+		buildingMaterialModel Hamstad4Brick;
     	rho     2005;
     	cap     840;
 		lambda1	0.5;	//lambda = lambda1 + ws*lambda2
@@ -27,7 +27,7 @@ buildingMaterials
     }
     {
         name    finishing;
-        buildingMaterialModel HamstadPlaster;
+        buildingMaterialModel Hamstad4Plaster;
     	rho     790;
     	cap     870;
 		lambda1	0.2;	//lambda = lambda1 + ws*lambda2
