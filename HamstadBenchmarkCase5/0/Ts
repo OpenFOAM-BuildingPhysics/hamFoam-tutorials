@@ -27,25 +27,25 @@ boundaryField
     {     
         type                    HAMexternalHeatFlux;  
         value                   uniform 298.15;  
-        Tambient                tableFile; TambientCoeffs {file "0/inside/Tambient";}
-        alpha                   tableFile; alphaCoeffs {file "0/inside/alpha";}        
-        rad                     tableFile; radCoeffs {file "0/inside/rad";} 
-        beta                    tableFile; betaCoeffs {file "0/inside/beta";}
-        pv_o                    tableFile; pv_oCoeffs {file "0/inside/pv_o";}
-        gl                      tableFile; glCoeffs {file "0/inside/gl";}
-        rainTemp                tableFile; rainTempCoeffs {file "0/inside/rainTemp";}        
+        Tambient                {file "0/inside/Tambient";}
+        alpha                   {file "0/inside/alpha";}        
+        rad                     {file "0/inside/rad";} 
+        beta                    {file "0/inside/beta";}
+        pv_o                    {file "0/inside/pv_o";}
+        gl                      {file "0/inside/gl";}
+        rainTemp                {file "0/inside/rainTemp";}         
     }
     outside
     {   
         type                    HAMexternalHeatFlux;  
         value                   uniform 298.15;
-        Tambient                tableFile; TambientCoeffs {file "0/outside/Tambient";}
-        alpha                   tableFile; alphaCoeffs {file "0/outside/alpha";}        
-        rad                     tableFile; radCoeffs {file "0/outside/rad";} 
-        beta                    tableFile; betaCoeffs {file "0/outside/beta";}
-        pv_o                    tableFile; pv_oCoeffs {file "0/outside/pv_o";}
-        gl                      tableFile; glCoeffs {file "0/outside/gl";}
-        rainTemp                tableFile; rainTempCoeffs {file "0/outside/rainTemp";}             
+        Tambient                {file "0/outside/Tambient";}
+        alpha                   {file "0/outside/alpha";}        
+        rad                     {file "0/outside/rad";} 
+        beta                    {file "0/outside/beta";}
+        pv_o                    {file "0/outside/pv_o";}
+        gl                      {file "0/outside/gl";}
+        rainTemp                {file "0/outside/rainTemp";}             
     }
     sides
     {
