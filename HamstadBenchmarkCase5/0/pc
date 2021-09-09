@@ -24,12 +24,18 @@ boundaryField
     inside
     {
         type                    HAMexternalMoistureFlux;
-        value                   uniform -7.0291e+07;        
+        value                   uniform -7.0291e+07; 
+        beta                    tableFile; betaCoeffs {file "0/inside/beta";}
+        pv_o                    tableFile; pv_oCoeffs {file "0/inside/pv_o";}
+        gl                      tableFile; glCoeffs {file "0/inside/gl";}            
     }
     outside
     {        
         type                    HAMexternalMoistureFlux;
-        value                   uniform -7.0291e+07;              
+        value                   uniform -7.0291e+07; 
+        beta                    tableFile; betaCoeffs {file "0/outside/beta";}
+        pv_o                    tableFile; pv_oCoeffs {file "0/outside/pv_o";}
+        gl                      tableFile; glCoeffs {file "0/outside/gl";}                       
     }
     sides
     {
