@@ -1,4 +1,0 @@
-cellSet loadBearing new boxToCell (0.00 0.00 0)(0.1 1 1)
-cellZoneSet loadBearing new setToCellZone loadBearing
-cellSet finishing new boxToCell (0.1 0.00 0)(0.12 1 1)
-cellZoneSet finishing new setToCellZone finishing

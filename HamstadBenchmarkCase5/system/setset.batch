@@ -1,8 +1,0 @@
-cellSet brick new boxToCell (0.00 0.00 0)(0.365 1 1)
-cellZoneSet brick new setToCellZone brick
-
-cellSet mortar new boxToCell (0.365 0.00 0)(0.38 1 1)
-cellZoneSet mortar new setToCellZone mortar
-
-cellSet insulation new boxToCell (0.38 0.00 0)(0.42 1 1)
-cellZoneSet insulation new setToCellZone insulation
