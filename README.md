@@ -6,7 +6,7 @@ Source code for the solver code can be downloaded from [here](https://gitlab.eth
 
 The solver is tested for the following OpenFOAM versions:
 
-* OpenFOAM-org (OpenFOAM Foundation) v6, v7, v8, v9 
+* OpenFOAM-org (OpenFOAM Foundation) v6, v7, v8, v9, v10, v11
 * OpenFOAM-com (OpenCFD-ESI) v1806
 
 ### Tutorial case
@@ -24,4 +24,5 @@ You can use the tutorial for a specific OpenFOAM version by checking out the com
 	cd hamfoam-tutorial
 	git checkout tags/of-org_v9.0
 
+See the list of tags for different versions [here](https://gitlab.ethz.ch/openfoam-cbp/tutorials/hamfoam/-/tags)
 
