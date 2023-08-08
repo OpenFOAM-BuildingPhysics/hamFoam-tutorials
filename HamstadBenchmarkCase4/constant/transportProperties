@@ -17,21 +17,21 @@ FoamFile
 
 buildingMaterials
 (
-	{
-		name	loadBearing;
-		buildingMaterialModel Hamstad4Brick;
-    	rho     2005;
-    	cap     840;
-		lambda1	0.5;	//lambda = lambda1 + ws*lambda2
-		lambda2	4.5e-3;
+    {
+        name    loadBearing;
+        buildingMaterialModel Hamstad4Brick;
+        rho     2005;
+        cap     840;
+        lambda1 0.5;    //lambda = lambda1 + ws*lambda2
+        lambda2 4.5e-3;
     }
     {
         name    finishing;
         buildingMaterialModel Hamstad4Plaster;
-    	rho     790;
-    	cap     870;
-		lambda1	0.2;	//lambda = lambda1 + ws*lambda2
-		lambda2	4.5e-3;
+        rho     790;
+        cap     870;
+        lambda1 0.2;    //lambda = lambda1 + ws*lambda2
+        lambda2 4.5e-3;
     }    
 );
 

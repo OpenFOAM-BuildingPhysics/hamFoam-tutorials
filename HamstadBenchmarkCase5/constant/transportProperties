@@ -17,29 +17,29 @@ FoamFile
 
 buildingMaterials
 (
-	{
-		name	brick;
-		buildingMaterialModel Hamstad5Brick;
-    	rho     1600;
-    	cap     1000;
-		lambda1	0.682;	//lambda = lambda1 + ws*lambda2
-		lambda2	0;
+    {
+        name    brick;
+        buildingMaterialModel Hamstad5Brick;
+        rho     1600;
+        cap     1000;
+        lambda1 0.682;  //lambda = lambda1 + ws*lambda2
+        lambda2 0;
     }
-	{
-		name	mortar;
-		buildingMaterialModel Hamstad5Mortar;
-    	rho     230;
-    	cap     920;
-		lambda1	0.6;	//lambda = lambda1 + ws*lambda2
-		lambda2	0.00056;
+    {
+        name    mortar;
+        buildingMaterialModel Hamstad5Mortar;
+        rho     230;
+        cap     920;
+        lambda1 0.6;    //lambda = lambda1 + ws*lambda2
+        lambda2 0.00056;
     }
-	{
-		name	insulation;
-		buildingMaterialModel Hamstad5Insulation;
-    	rho     212;
-    	cap     1000;
-		lambda1	0.06;	//lambda = lambda1 + ws*lambda2
-		lambda2	0.00056;
+    {
+        name    insulation;
+        buildingMaterialModel Hamstad5Insulation;
+        rho     212;
+        cap     1000;
+        lambda1 0.06;   //lambda = lambda1 + ws*lambda2
+        lambda2 0.00056;
     }
 );
 

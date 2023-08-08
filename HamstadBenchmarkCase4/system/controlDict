@@ -50,8 +50,8 @@ Picard
     minDeltaT       1E-6;
     maxDeltaT       3600;//30;
 
-    PicardToleranceTs	0.1;
-    PicardTolerancews	0.1;
+    PicardToleranceTs   0.1;
+    PicardTolerancews   0.1;
 }
 
 pcEqnForm    pc-based; //'pc-based' or 'mixed' - default is 'pc-based'
