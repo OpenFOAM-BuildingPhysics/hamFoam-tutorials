@@ -2,7 +2,7 @@
 
 An open-source solver for coupled heat and moisture transport in porous media based on OpenFOAM
 
-Source code for the solver code can be downloaded from [here](https://gitlab.ethz.ch/openfoam-cbp/solvers/hamfoam)
+Source code for the solver code can be downloaded from [here](https://github.com/OpenFOAM-BuildingPhysics/hamFoam)
 
 The solver is tested for the following OpenFOAM versions:
 
@@ -20,9 +20,9 @@ Tutorial cases solve HAMSTAD Benchmark case 4 (response analysis) and case 5 (ca
 
 You can use the tutorial for a specific OpenFOAM version by checking out the commit with corresponding tag. For example, for OpenFOAM v9:
 
-	git clone https://gitlab.ethz.ch/openfoam-cbp/tutorials/hamfoam.git hamfoam-tutorial
+	git clone https://github.com/OpenFOAM-BuildingPhysics/hamFoam-tutorials.git
 	cd hamfoam-tutorial
 	git checkout tags/of-org_v9.0
 
-See the list of tags for different versions [here](https://gitlab.ethz.ch/openfoam-cbp/tutorials/hamfoam/-/tags)
+See the list of tags for different versions [here](https://github.com/OpenFOAM-BuildingPhysics/hamFoam-tutorials/tags)
 
